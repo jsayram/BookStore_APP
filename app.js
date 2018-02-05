@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 var app = express();
 
+app.use(express.static(__dirname+ '/client'));
+
 //middle ware to use body parser
 app.use(bodyParser.json());
 
