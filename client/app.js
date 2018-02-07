@@ -5,7 +5,7 @@ myApp.config(['$routeProvider',function ($routeProvider){
 	$routeProvider    
 	.when('/', {
 		controller: 'BooksController', 
-		templateUrl: 'view/books.html'
+		templateUrl: 'view/books.html' 
 	})
 	.when('/books', { 
 		controller: 'BooksController',

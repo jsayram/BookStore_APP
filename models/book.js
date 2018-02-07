@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 //Generate Schema
 var bookSchema = mongoose.Schema({
 
-    name: {
+    title: {
         type: String,
         required: true
     },
