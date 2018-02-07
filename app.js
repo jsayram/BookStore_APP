@@ -7,7 +7,7 @@ app.use(express.static(__dirname+ '/client'));
 
 //middle ware to use body parser
 app.use(bodyParser.json());
-
+ 
 //included genres files
 Genre = require('./models/genre');
 Book = require('./models/book');
@@ -20,6 +20,7 @@ app.get('/', (req, res)=>{
 	res.send("Please Use2 /api/books or /api/genres");
 
 });
+
 
 //gets generes
 app.get('/api/genres', (req, res)=>{
